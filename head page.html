@@ -24,7 +24,7 @@
                     <li><a href="">TIPS</a></li>
                 </ul>
             </div>
-           
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </nav>
 <div class="text-box"> 
                      <h1> Educational platform </h1>
@@ -79,8 +79,12 @@
                 </div>
             </div>
         </div>
+    
     </section>
- 
+<script>function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script> 
     
 
     
