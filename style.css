@@ -102,7 +102,43 @@ width:100px;
     background: #1B3F78;
     transition: 1s;
 }
+@media (max-width: 768px) {
+    .nav-links ul {
+        display: none; /* Hide navigation links initially */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 
+    .nav-links.active ul {
+        display: block; /* Show navigation links when active */
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px; /* Smaller font size for headings */
+        text-align: center;
+    }
+
+    a {
+        font-size: 25px; /* Adjust link font size */
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+    }
+}
 .campus{
     width: 80%;
     margin: auto;
