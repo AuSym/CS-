@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name ="viewport" content="with=device-width", initial-scale="1.0">
+    <meta name ="viewport" content="width=device-width", initial-scale="1.0">
     <title> project </title>
     <link rel="stylesheet" href="style.css">
                                            <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <style>.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .nav-links ul {
+        display: none; /* Initially hidden for mobile */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-links.active ul {
+        display: block; /* Display menu when active */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hamburger {
+    display: none; /* Hide by default */
+}
+</style>
                                                                                                                         </head>
 <body>
     <section class="none">
         <nav>
             <a href="head page.html"><img src="images/hell.png" alt="" width=200px height=100px></a>
+             <div class="hamburger" onclick="toggleMenu()">☰</div> 
             <div class="nav-links">
               
                 
@@ -129,7 +169,11 @@ appropriateprogramming language;<br>
             <a href="https://drive.google.com/uc?export=download&id=103Iu7VrgVowyc8Y4Bf5uwnw7fwpSayIQ">To find out further information download the file by clicking</a> 
      <hr align="center" color="white" nozhade size="5px" width="100%">
     </section>
-    
+    <script><script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script></script>
     </body>
 </html>
 
