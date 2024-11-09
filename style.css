@@ -175,14 +175,10 @@ width:100px;
     margin-top: 20px;
     font-weight: 600;
 }
-@media (max-width: 768px){
-    .sub-header h1{
-    margin-top: 30px;
-    font-size: 40px;
-    
 
-}
-}
+
+
+
 .sub-header{
     height: 100%;
     width:100%;
